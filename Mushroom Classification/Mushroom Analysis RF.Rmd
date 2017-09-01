@@ -1,0 +1,28 @@
+---
+title: "Mushroom Analysis Random Forest"
+author: "Casey Jenkins"
+date: "8/30/2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Raw Data needed to be cleaned and processed
+
+```{r mushrooms}
+mushrooms = read.table(file = "~/Machine-Learning/Mushroom Classification/agaricus-lepiota.data", header = FALSE, sep = ",")
+head(mushrooms)
+```
+
+## Cluster Plot
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+p = ggplot(data,aes(x=Odor, y=SporePrintColor, color=Edible))
+p + geom_jitter(alpha=0.3) + scale_color_manual(breaks = c('Edible','Poisonous'),values=c('darkgreen','red'))
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
