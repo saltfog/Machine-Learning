@@ -73,14 +73,14 @@ p = ggplot(data,aes(x=CapShape, y=CapSurface, color=Edible))
 p + geom_jitter(alpha=0.3) + scale_color_manual(breaks = c('Edible','Poisonous'),values=c('darkgreen','red'))
 
 p = ggplot(data,aes(x=StalkColorBelowRing, y=StalkColorAboveRing, color=Edible))
-p + geom_jitter(alpha=0.3) + scale_color_manual(breaks = c('Edible','Poisonous'),values=c('darkgreen','red'))
+p + geom_jitter(alpha=0.3, width = 0.5) + scale_color_manual(breaks = c('Edible','Poisonous'),values=c('darkgreen','red'))
 
 p = ggplot(data,aes(x=Odor, y=SporePrintColor, color=Edible))
-p + geom_jitter(alpha=0.3) + scale_color_manual(breaks = c('Edible','Poisonous'),values=c('darkgreen','red'))
+p + geom_jitter(alpha=0.3, width = 0.5) + scale_color_manual(breaks = c('Edible','Poisonous'),values=c('darkgreen','red'))
 
 p = ggplot(data,aes(x=Edible, y=Odor, color = Edible))
-p + geom_jitter(alpha=0.2) + scale_color_manual(breaks = c('Edible','Poisonous'),values=c('darkgreen','red'))
+p + geom_jitter(alpha=0.2, width = 0.1) + scale_color_manual(breaks = c('Edible','Poisonous'),values=c('darkgreen','red'))
 
 p = ggplot(data,aes(x=Edible, y=SporePrintColor, color = Edible))
-p + geom_jitter(alpha=0.2) + scale_color_manual(breaks = c('Edible','Poisonous'),values=c('darkgreen','red'))
+p + geom_jitter(alpha=0.2, width = 0.1) + scale_color_manual(breaks = c('Edible','Poisonous'),values=c('darkgreen','red') )
 
