@@ -1,6 +1,6 @@
 
 ```{r results='hide', warning=FALSE, message=FALSE}
-source('helper_functions.R')
+source('prepare_functions.R')
 library(randomForest)
 library(e1071)
 library(caret)
@@ -9,7 +9,7 @@ set.seed(123)
 ```
 ```{r cache=TRUE}
 #Import Data via Custom Function
-data = fetchAndCleanData()
+data = prepareAndCleanData()
 head(data)
 ```
 
